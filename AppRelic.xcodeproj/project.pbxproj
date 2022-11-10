@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9707285291CA9EA00790EAB /* AppRelicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9707284291CA9EA00790EAB /* AppRelicApp.swift */; };
+		B9707287291CA9EA00790EAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9707286291CA9EA00790EAB /* ContentView.swift */; };
+		B9707289291CA9ED00790EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9707288291CA9ED00790EAB /* Assets.xcassets */; };
+		B970728C291CA9ED00790EAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B970728B291CA9ED00790EAB /* Preview Assets.xcassets */; };
+		B970728E291CA9ED00790EAB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970728D291CA9ED00790EAB /* Persistence.swift */; };
+		B9707291291CA9ED00790EAB /* AppRelic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B970728F291CA9ED00790EAB /* AppRelic.xcdatamodeld */; };
+		B970729C291CA9ED00790EAB /* AppRelicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B970729B291CA9ED00790EAB /* AppRelicTests.swift */; };
+		B97072A6291CA9ED00790EAB /* AppRelicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97072A5291CA9ED00790EAB /* AppRelicUITests.swift */; };
+		B97072A8291CA9ED00790EAB /* AppRelicUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97072A7291CA9ED00790EAB /* AppRelicUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9707298291CA9ED00790EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9707279291CA9EA00790EAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9707280291CA9EA00790EAB;
+			remoteInfo = AppRelic;
+		};
+		B97072A2291CA9ED00790EAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9707279291CA9EA00790EAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9707280291CA9EA00790EAB;
+			remoteInfo = AppRelic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9707281291CA9EA00790EAB /* AppRelic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRelic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9707284291CA9EA00790EAB /* AppRelicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRelicApp.swift; sourceTree = "<group>"; };
+		B9707286291CA9EA00790EAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B9707288291CA9ED00790EAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B970728B291CA9ED00790EAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B970728D291CA9ED00790EAB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		B9707290291CA9ED00790EAB /* AppRelic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppRelic.xcdatamodel; sourceTree = "<group>"; };
+		B9707292291CA9ED00790EAB /* AppRelic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppRelic.entitlements; sourceTree = "<group>"; };
+		B9707297291CA9ED00790EAB /* AppRelicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRelicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B970729B291CA9ED00790EAB /* AppRelicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRelicTests.swift; sourceTree = "<group>"; };
+		B97072A1291CA9ED00790EAB /* AppRelicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppRelicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B97072A5291CA9ED00790EAB /* AppRelicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRelicUITests.swift; sourceTree = "<group>"; };
+		B97072A7291CA9ED00790EAB /* AppRelicUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRelicUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B970727E291CA9EA00790EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9707294291CA9ED00790EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B970729E291CA9ED00790EAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9707278291CA9EA00790EAB = {
+			isa = PBXGroup;
+			children = (
+				B9707283291CA9EA00790EAB /* AppRelic */,
+				B970729A291CA9ED00790EAB /* AppRelicTests */,
+				B97072A4291CA9ED00790EAB /* AppRelicUITests */,
+				B9707282291CA9EA00790EAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9707282291CA9EA00790EAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9707281291CA9EA00790EAB /* AppRelic.app */,
+				B9707297291CA9ED00790EAB /* AppRelicTests.xctest */,
+				B97072A1291CA9ED00790EAB /* AppRelicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9707283291CA9EA00790EAB /* AppRelic */ = {
+			isa = PBXGroup;
+			children = (
+				B9707284291CA9EA00790EAB /* AppRelicApp.swift */,
+				B9707286291CA9EA00790EAB /* ContentView.swift */,
+				B9707288291CA9ED00790EAB /* Assets.xcassets */,
+				B970728D291CA9ED00790EAB /* Persistence.swift */,
+				B9707292291CA9ED00790EAB /* AppRelic.entitlements */,
+				B970728F291CA9ED00790EAB /* AppRelic.xcdatamodeld */,
+				B970728A291CA9ED00790EAB /* Preview Content */,
+			);
+			path = AppRelic;
+			sourceTree = "<group>";
+		};
+		B970728A291CA9ED00790EAB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B970728B291CA9ED00790EAB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B970729A291CA9ED00790EAB /* AppRelicTests */ = {
+			isa = PBXGroup;
+			children = (
+				B970729B291CA9ED00790EAB /* AppRelicTests.swift */,
+			);
+			path = AppRelicTests;
+			sourceTree = "<group>";
+		};
+		B97072A4291CA9ED00790EAB /* AppRelicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B97072A5291CA9ED00790EAB /* AppRelicUITests.swift */,
+				B97072A7291CA9ED00790EAB /* AppRelicUITestsLaunchTests.swift */,
+			);
+			path = AppRelicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9707280291CA9EA00790EAB /* AppRelic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97072AB291CA9ED00790EAB /* Build configuration list for PBXNativeTarget "AppRelic" */;
+			buildPhases = (
+				B970727D291CA9EA00790EAB /* Sources */,
+				B970727E291CA9EA00790EAB /* Frameworks */,
+				B970727F291CA9EA00790EAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppRelic;
+			productName = AppRelic;
+			productReference = B9707281291CA9EA00790EAB /* AppRelic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9707296291CA9ED00790EAB /* AppRelicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97072AE291CA9ED00790EAB /* Build configuration list for PBXNativeTarget "AppRelicTests" */;
+			buildPhases = (
+				B9707293291CA9ED00790EAB /* Sources */,
+				B9707294291CA9ED00790EAB /* Frameworks */,
+				B9707295291CA9ED00790EAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9707299291CA9ED00790EAB /* PBXTargetDependency */,
+			);
+			name = AppRelicTests;
+			productName = AppRelicTests;
+			productReference = B9707297291CA9ED00790EAB /* AppRelicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B97072A0291CA9ED00790EAB /* AppRelicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B97072B1291CA9ED00790EAB /* Build configuration list for PBXNativeTarget "AppRelicUITests" */;
+			buildPhases = (
+				B970729D291CA9ED00790EAB /* Sources */,
+				B970729E291CA9ED00790EAB /* Frameworks */,
+				B970729F291CA9ED00790EAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B97072A3291CA9ED00790EAB /* PBXTargetDependency */,
+			);
+			name = AppRelicUITests;
+			productName = AppRelicUITests;
+			productReference = B97072A1291CA9ED00790EAB /* AppRelicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9707279291CA9EA00790EAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					B9707280291CA9EA00790EAB = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					B9707296291CA9ED00790EAB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = B9707280291CA9EA00790EAB;
+					};
+					B97072A0291CA9ED00790EAB = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = B9707280291CA9EA00790EAB;
+					};
+				};
+			};
+			buildConfigurationList = B970727C291CA9EA00790EAB /* Build configuration list for PBXProject "AppRelic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9707278291CA9EA00790EAB;
+			productRefGroup = B9707282291CA9EA00790EAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9707280291CA9EA00790EAB /* AppRelic */,
+				B9707296291CA9ED00790EAB /* AppRelicTests */,
+				B97072A0291CA9ED00790EAB /* AppRelicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B970727F291CA9EA00790EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B970728C291CA9ED00790EAB /* Preview Assets.xcassets in Resources */,
+				B9707289291CA9ED00790EAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9707295291CA9ED00790EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B970729F291CA9ED00790EAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B970727D291CA9EA00790EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B970728E291CA9ED00790EAB /* Persistence.swift in Sources */,
+				B9707291291CA9ED00790EAB /* AppRelic.xcdatamodeld in Sources */,
+				B9707287291CA9EA00790EAB /* ContentView.swift in Sources */,
+				B9707285291CA9EA00790EAB /* AppRelicApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9707293291CA9ED00790EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B970729C291CA9ED00790EAB /* AppRelicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B970729D291CA9ED00790EAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B97072A8291CA9ED00790EAB /* AppRelicUITestsLaunchTests.swift in Sources */,
+				B97072A6291CA9ED00790EAB /* AppRelicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9707299291CA9ED00790EAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9707280291CA9EA00790EAB /* AppRelic */;
+			targetProxy = B9707298291CA9ED00790EAB /* PBXContainerItemProxy */;
+		};
+		B97072A3291CA9ED00790EAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9707280291CA9EA00790EAB /* AppRelic */;
+			targetProxy = B97072A2291CA9ED00790EAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B97072A9291CA9ED00790EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B97072AA291CA9ED00790EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B97072AC291CA9ED00790EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppRelic/AppRelic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppRelic/Preview Content\"";
+				DEVELOPMENT_TEAM = 434NL52Z48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pkology.dev.AppRelic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B97072AD291CA9ED00790EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppRelic/AppRelic.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AppRelic/Preview Content\"";
+				DEVELOPMENT_TEAM = 434NL52Z48;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pkology.dev.AppRelic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B97072AF291CA9ED00790EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 434NL52Z48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pkology.dev.AppRelicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppRelic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppRelic";
+			};
+			name = Debug;
+		};
+		B97072B0291CA9ED00790EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 434NL52Z48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pkology.dev.AppRelicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppRelic.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AppRelic";
+			};
+			name = Release;
+		};
+		B97072B2291CA9ED00790EAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 434NL52Z48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pkology.dev.AppRelicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AppRelic;
+			};
+			name = Debug;
+		};
+		B97072B3291CA9ED00790EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 434NL52Z48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pkology.dev.AppRelicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = AppRelic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B970727C291CA9EA00790EAB /* Build configuration list for PBXProject "AppRelic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97072A9291CA9ED00790EAB /* Debug */,
+				B97072AA291CA9ED00790EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97072AB291CA9ED00790EAB /* Build configuration list for PBXNativeTarget "AppRelic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97072AC291CA9ED00790EAB /* Debug */,
+				B97072AD291CA9ED00790EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97072AE291CA9ED00790EAB /* Build configuration list for PBXNativeTarget "AppRelicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97072AF291CA9ED00790EAB /* Debug */,
+				B97072B0291CA9ED00790EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B97072B1291CA9ED00790EAB /* Build configuration list for PBXNativeTarget "AppRelicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97072B2291CA9ED00790EAB /* Debug */,
+				B97072B3291CA9ED00790EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B970728F291CA9ED00790EAB /* AppRelic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B9707290291CA9ED00790EAB /* AppRelic.xcdatamodel */,
+			);
+			currentVersion = B9707290291CA9ED00790EAB /* AppRelic.xcdatamodel */;
+			path = AppRelic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B9707279291CA9EA00790EAB /* Project object */;
+}
